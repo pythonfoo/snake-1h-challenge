@@ -56,8 +56,9 @@ def update():
     hx, hy = snake[0]
 
     if snake[0] == point:
-        snake.pop()
         point = (random.choice(list(range(10))), random.choice(list(range(10))))
+    else:
+        snake.pop()
     print(point)
     
     # print(hx, hy, 0 > hx or hx > 13, 0 > hy or hy > 9)
